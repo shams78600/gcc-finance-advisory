@@ -799,12 +799,12 @@ footer a{color:#b4c6d6;text-decoration:none;margin-left:18px}
         <ul class="tick" style="margin-top:18px"><li>12 KPIs your board actually asks about</li><li>10-point hidden-loss checklist</li><li>Sector benchmark notes for KSA</li><li>Optional free 30-min financial health call</li></ul>
       </div>
       <form class="mf" id="mf">
-        <label for="n">Full name</label><input id="n" required placeholder="e.g. Ahmed Al-Qahtani" />
+        <label for="n">Full name</label><input id="n" name="name" required placeholder="e.g. Ahmed Al-Qahtani" />
         <label for="r">Role</label>
-        <select id="r" required><option value="">Select your role</option><option>CFO / Finance Director</option><option>Financial Controller</option><option>Senior Finance Manager / FP&A</option><option>Partner / Principal (consulting)</option><option>Project / Investment Director</option></select>
+        <select id="r" name="role" required><option value="">Select your role</option><option>CFO / Finance Director</option><option>Financial Controller</option><option>Senior Finance Manager / FP&A</option><option>Partner / Principal (consulting)</option><option>Project / Investment Director</option></select>
         <label for="s">Industry</label>
-        <select id="s" required><option value="">Select your industry</option><option>Industrial manufacturing</option><option>Clean energy / project finance</option><option>PPP / infrastructure</option><option>Management consulting</option><option>Trading / FMCG / contracting</option><option>Other</option></select>
-        <label for="e">Work email</label><input id="e" type="email" required placeholder="name@company.com" />
+        <select id="s" name="industry" required><option value="">Select your industry</option><option>Industrial manufacturing</option><option>Clean energy / project finance</option><option>PPP / infrastructure</option><option>Management consulting</option><option>Trading / FMCG / contracting</option><option>Other</option></select>
+        <label for="e">Work email</label><input id="e" name="email" type="email" required placeholder="name@company.com" />
         <button class="btn btn-gold" type="submit">Send me the CFO KPI Pack</button>
         <div class="ok" id="ok">✓ Thank you! Your pack is on its way. Check your inbox (and WhatsApp, if you shared it).</div>
         <small>No spam. One useful email per fortnight. Unsubscribe anytime.</small>
@@ -841,7 +841,8 @@ footer a{color:#b4c6d6;text-decoration:none;margin-left:18px}
     <p class="lead" style="margin:0 auto">Share a TB, sales export or last FS on WhatsApp. You'll have a fixed SAR quote within 24 hours. No commitment, no hourly billing, NDA on request.</p>
     <div class="hero-ctas">
       <a class="btn btn-gold" href="#" data-wa="Hi Shams, I'd like to send a file for a fixed SAR quote.">💬 Send a file on WhatsApp</a>
-      <a class="btn btn-ghost" href="/cdn-cgi/l/email-protection#a6fddfc9d3d486c3cbc7cfcafb99d5d3c4ccc3c5d29be0cfdec3c2839496f5e7f4839496d7d3c9d2c3839496d4c3d7d3c3d5d2">✉ Email instead</a>
+      <a class="btn btn-ghost" href="#" data-li>💼 DM me on LinkedIn — send "ANALYSIS"</a>
+      <a class="btn btn-ghost" href="/cdn-cgi/l/email-protection#376868727a767e7b6868084442555d5254430a715e4f5253120507647665120507464258435212050745524642524443">✉ Email instead</a>
     </div>
     <div class="ps"><b>P.S.</b> If you're carrying a board meeting, a bank review or an audit close in the next 30 days, start now. The Diagnostic takes 5–7 working days, and the deck should reach your CEO before the meeting does.</div>
   </div>
@@ -850,7 +851,7 @@ footer a{color:#b4c6d6;text-decoration:none;margin-left:18px}
 <footer>
   <div class="wrap">
     <div>© 2026 Shams Farooq · GCC Finance Advisory · Senior Financial Analysis & BI for KSA / GCC</div>
-    <div class="hide-sm"><a href="#pricing">Pricing</a><a href="#faq">FAQ</a><a href="#" data-wa="Hi Shams">WhatsApp</a><a href="#">LinkedIn</a></div>
+    <div class="hide-sm"><a href="#pricing">Pricing</a><a href="#faq">FAQ</a><a href="#" data-wa="Hi Shams">WhatsApp</a><a href="#" data-li>LinkedIn</a></div>
   </div>
 </footer>
 
@@ -859,11 +860,26 @@ footer a{color:#b4c6d6;text-decoration:none;margin-left:18px}
 </a>
 
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-// === Set your WhatsApp number here (international format, digits only), e.g. "9665XXXXXXXX" ===
-const WA_NUMBER = "";
+// ================= CONFIG — live values =================
+const WA_NUMBER    = "923034114548";                       // WhatsApp, intl format, digits only (PK +92 303 4114548)
+const LI_URL       = "https://www.linkedin.com/in/shamsfaroooq/"; // LinkedIn profile (opens your Message box)
+const EMAIL        = "shams78600@gmail.com";               // email button
+const FORMSPREE_ID = "";                                   // OPTIONAL: Formspree form id for lead-magnet form emails. Leave "" to use the WhatsApp fallback.
+                                                              // Leave "" to use the WhatsApp fallback (lead details arrive in your WhatsApp chat).
+// ====================================================================================
+
+// WhatsApp buttons
 document.querySelectorAll("[data-wa]").forEach(a=>{
   a.href = "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(a.dataset.wa);
   a.target = "_blank"; a.rel = "noopener";
+});
+// LinkedIn buttons -> your profile (visitors hit the "Message" button there; send "ANALYSIS")
+document.querySelectorAll("[data-li]").forEach(a=>{
+  a.href = LI_URL; a.target = "_blank"; a.rel = "noopener";
+});
+// Email buttons -> rewrite mailto:__EMAIL__ placeholder
+document.querySelectorAll('a[href^="mailto:"]').forEach(a=>{
+  a.href = a.href.replace("__EMAIL__", EMAIL || "you@yourdomain.com");
 });
 // Niche tabs
 document.querySelectorAll(".tab").forEach(t=>t.addEventListener("click",()=>{
@@ -872,12 +888,30 @@ document.querySelectorAll(".tab").forEach(t=>t.addEventListener("click",()=>{
   t.classList.add("on");
   document.getElementById("p-"+t.dataset.t).classList.add("on");
 }));
-// Lead magnet form (static demo; connect to Tally/Formspree/ConvertKit when live)
-document.getElementById("mf").addEventListener("submit",e=>{
+// Lead-magnet form: if FORMSPREE_ID is set, POST to Formspree (arrives in your inbox);
+// either way, also open WhatsApp with the lead's details prefilled so you can send the pack instantly.
+document.getElementById("mf").addEventListener("submit", async e=>{
   e.preventDefault();
-  document.getElementById("ok").style.display="block";
-  e.target.querySelector("button").textContent="✓ Sent";
+  const f = e.target;
+  const data = { name:f.n.value, role:f.r.value, industry:f.s.value, email:f.e.value };
+  if (FORMSPREE_ID) {
+    try {
+      const r = await fetch("https://formspree.io/f/" + FORMSPREE_ID, {
+        method:"POST",
+        headers:{"Accept":"application/json","Content-Type":"application/json"},
+        body: JSON.stringify({ ...data, _subject:"New CFO KPI Pack request — " + data.name, form:"CFO KPI Pack (sales page)" })
+      });
+      if (!r.ok) throw new Error("formspree");
+    } catch(_) { /* fall through to WhatsApp path */ }
+  }
+  if (WA_NUMBER) {
+    const msg = "Hi Shams, I requested the free CFO KPI Pack from your page.\n"
+      + "Name: " + data.name + "\nRole: " + data.role + "\nIndustry: " + data.industry + "\nEmail: " + data.email;
+    window.open("https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(msg), "_blank");
+  }
+  document.getElementById("ok").style.display = "block";
+  f.querySelector("button").textContent = "✓ Request received";
 });
 </script>
-<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a54dc08bea13b672',t:'MTc5MzczMzc5Mg=='};var l=window.parent.location,o;try{o=new URL(l.origin).origin}catch(e){try{o=new URL(new URL(l.href).origin).origin}catch(e){o=''}}var u='/cdn-cgi/challenge-platform/scripts/jsd/main.js?ray=a54dc08bea13b672',a=document.createElement('script');a.src=o?new URL(u,o).href:u;document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a54e62ceecbfe481',t:'MTc5Mzc0MDQzOA=='};var l=window.parent.location,o;try{o=new URL(l.origin).origin}catch(e){try{o=new URL(new URL(l.href).origin).origin}catch(e){o=''}}var u='/cdn-cgi/challenge-platform/scripts/jsd/main.js?ray=a54e62ceecbfe481',a=document.createElement('script');a.src=o?new URL(u,o).href:u;document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
