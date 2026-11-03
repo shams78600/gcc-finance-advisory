@@ -1,0 +1,883 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Board-Ready Financial Analysis for KSA & GCC Finance Leaders | Shams Farooq — GCC Finance Advisory</title>
+<meta name="description" content="Board-ready financial analysis for CFOs and finance managers in KSA and the GCC: you get an Excel model, a Word report and a PowerPoint deck. Hidden loss drivers, profit potential, valuation, cash flow and IFRS. Prices from SAR 500." />
+<!--
+  COPY FRAMEWORK: P.A.S.T.O.R. (Problem → Amplify → Story/Solution → Transformation & Testimony → Offer → Response)
+  PRICE JUSTIFICATION: Value Equation  —  Value = (Dream Outcome × Perceived Likelihood) ÷ (Time Delay × Effort)
+  NOTE: Replace testimonial text with verbatim (permissioned) email excerpts. Replace WhatsApp number in JS const WA_NUMBER.
+-->
+<style>
+:root{
+  --ink:#061b31; --ink2:#0c2a47; --ink3:#123a5e; --gold:#d39d48; --gold2:#f0c47d; --goldbg:#fbf3e6;
+  --paper:#f5f7f9; --line:#dfe6ec; --muted:#587084; --txt:#1b2b3a; --ok:#1f8a5b; --bad:#c2453b;
+  --r:14px; --shadow:0 14px 40px rgba(6,27,49,.12);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Segoe UI",Inter,Roboto,Arial,sans-serif;color:var(--txt);background:#fff;line-height:1.6;font-size:16.5px}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+h1,h2,h3,h4{color:var(--ink);line-height:1.18;margin:0 0 14px;letter-spacing:-.4px}
+h2{font-size:clamp(28px,3.4vw,42px)}
+h3{font-size:21px}
+p{margin:0 0 14px}
+.eyebrow{display:inline-block;font-size:12.5px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;color:#8a5f1f;background:var(--goldbg);border:1px solid #efd9b3;padding:6px 12px;border-radius:99px;margin-bottom:16px}
+.dark .eyebrow{color:var(--gold2);background:rgba(211,157,72,.12);border-color:rgba(211,157,72,.35)}
+.lead{font-size:19px;color:var(--muted);max-width:780px}
+.center{text-align:center}.center .lead{margin-left:auto;margin-right:auto}
+section{padding:92px 0}
+.dark{background:var(--ink);color:#d7e2ec}
+.dark h2,.dark h3,.dark h4{color:#fff}
+.dark .lead{color:#a9bccc}
+.soft{background:var(--paper)}
+.gold{color:var(--gold)}
+.btn{display:inline-flex;align-items:center;gap:10px;font-weight:700;text-decoration:none;border-radius:10px;padding:15px 24px;font-size:16px;border:2px solid transparent;cursor:pointer;transition:.2s}
+.btn-gold{background:var(--gold);color:var(--ink)}
+.btn-gold:hover{background:var(--gold2);transform:translateY(-1px)}
+.btn-ghost{border-color:rgba(255,255,255,.35);color:#fff}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold2)}
+.btn-ink{background:var(--ink);color:#fff}
+.btn-ink:hover{background:var(--ink3)}
+.grid{display:grid;gap:22px}
+.g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:26px;box-shadow:0 2px 0 rgba(6,27,49,.02)}
+.dark .card{background:var(--ink2);border-color:#1d4266}
+.tick{list-style:none;padding:0;margin:0}
+.tick li{position:relative;padding-left:30px;margin:0 0 10px}
+.tick li:before{content:"";position:absolute;left:0;top:6px;width:18px;height:18px;border-radius:50%;background:var(--gold) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23061b31' stroke-width='3.4' d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E") center/12px no-repeat}
+.cross li:before{background:#f6dcd9 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath stroke='%23c2453b' stroke-width='3.4' d='M7 7l10 10M17 7L7 17'/%3E%3C/svg%3E") center/11px no-repeat}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:50;background:rgba(6,27,49,.96);backdrop-filter:blur(8px);border-bottom:1px solid #16395b}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:18px}
+.logo{display:flex;align-items:center;gap:11px;color:#fff;text-decoration:none;font-weight:800;letter-spacing:.2px}
+.logo-mark{width:36px;height:36px;border-radius:9px;background:linear-gradient(135deg,var(--gold),#a8732c);display:grid;place-items:center;color:var(--ink);font-weight:900;font-size:15px}
+.logo small{display:block;font-weight:500;color:#9fb3c6;font-size:11.5px;letter-spacing:.6px}
+.navlinks{display:flex;gap:24px;font-size:14.5px}
+.navlinks a{color:#c4d3e0;text-decoration:none}.navlinks a:hover{color:var(--gold2)}
+.nav-cta{padding:10px 16px;font-size:14.5px}
+
+/* HERO */
+.hero{background:radial-gradient(1100px 500px at 85% -10%,#18456f 0%,transparent 60%),linear-gradient(180deg,#061b31,#08223d);color:#d7e2ec;padding:84px 0 70px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:54px;align-items:center}
+.hero h1{color:#fff;font-size:clamp(34px,4.6vw,56px);letter-spacing:-1.2px}
+.hero h1 em{font-style:normal;color:var(--gold2)}
+.hero .lead{color:#b4c6d6;font-size:19.5px}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:14px;margin:28px 0 22px}
+.hero-mini{display:flex;flex-wrap:wrap;gap:8px 22px;font-size:14px;color:#9fb3c6}
+.hero-mini span:before{content:"✓ ";color:var(--gold)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:56px}
+.stat{border:1px solid #1d4266;border-radius:12px;padding:18px 18px;background:rgba(255,255,255,.02)}
+.stat b{display:block;font-size:30px;color:#fff;letter-spacing:-.6px}
+.stat span{font-size:13.5px;color:#9fb3c6}
+
+/* HANDOVER STACK (hero visual) */
+.stack{position:relative;height:470px}
+.doc{position:absolute;border-radius:14px;box-shadow:0 24px 60px rgba(0,0,0,.45);overflow:hidden;background:#fff;color:var(--txt)}
+.doc-h{display:flex;align-items:center;gap:8px;padding:9px 12px;font-size:12px;font-weight:700;color:#fff}
+.doc-h i{font-style:normal;background:rgba(255,255,255,.22);padding:2px 7px;border-radius:5px;font-size:10.5px}
+.x .doc-h{background:#1d6f42}.w .doc-h{background:#2b579a}.p .doc-h{background:#c43e1c}
+.doc.x{width:88%;left:0;top:0;z-index:1}
+.doc.w{width:58%;right:0;top:150px;z-index:2;transform:rotate(2deg)}
+.doc.p{width:66%;left:4%;top:262px;z-index:3;transform:rotate(-2.2deg)}
+.xb{padding:12px;background:#f7f9fb}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin-bottom:9px}
+.kpi{background:#fff;border:1px solid #e3e9ee;border-radius:7px;padding:7px 8px}
+.kpi small{display:block;font-size:9px;color:#7b8d9c;text-transform:uppercase;letter-spacing:.5px}
+.kpi b{font-size:14px;color:var(--ink)}
+.kpi .up{color:var(--ok);font-size:9.5px}.kpi .dn{color:var(--bad);font-size:9.5px}
+.chartrow{display:grid;grid-template-columns:1.5fr 1fr;gap:8px}
+.mini{background:#fff;border:1px solid #e3e9ee;border-radius:7px;padding:8px;height:112px}
+.mini small{font-size:9px;color:#7b8d9c;font-weight:700}
+.wb{padding:14px 16px}
+.wb .t{height:9px;background:var(--ink);width:70%;border-radius:3px;margin-bottom:10px}
+.wb .l{height:6px;background:#dde4ea;border-radius:3px;margin:6px 0}
+.wb .call{background:var(--goldbg);border-left:3px solid var(--gold);padding:7px 9px;font-size:10.5px;color:#6d4b16;margin:9px 0;border-radius:4px;font-weight:600}
+.pb{background:linear-gradient(135deg,#061b31,#123a5e);padding:16px 18px;color:#fff;height:170px;position:relative}
+.pb h5{margin:0 0 4px;font-size:15px}
+.pb p{font-size:10.5px;color:#a9bccc;margin:0 0 10px}
+.pb .bars{display:flex;align-items:flex-end;gap:7px;height:70px}
+.pb .bars div{flex:1;background:var(--gold);border-radius:3px 3px 0 0;opacity:.9}
+.pb .tag{position:absolute;right:14px;top:14px;font-size:10px;background:rgba(211,157,72,.2);color:var(--gold2);padding:3px 8px;border-radius:99px;font-weight:700}
+
+/* LOGO/SECTOR STRIP */
+.strip{background:#08223d;border-top:1px solid #16395b;padding:22px 0;color:#8ea5ba;font-size:14px}
+.strip .wrap{display:flex;flex-wrap:wrap;gap:12px 34px;justify-content:center;align-items:center}
+.strip b{color:#cfdbe6;font-weight:600}
+
+/* PROBLEM */
+.pain-grid{display:grid;grid-template-columns:1fr 1fr;gap:46px;align-items:start}
+.inbox{background:#fff;border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);overflow:hidden}
+.inbox-h{background:var(--ink);color:#fff;padding:12px 18px;font-size:13.5px;font-weight:700;display:flex;justify-content:space-between}
+.mail{display:grid;grid-template-columns:10px 1fr auto;gap:12px;padding:14px 18px;border-bottom:1px solid var(--line);font-size:14px}
+.mail:last-child{border-bottom:0}
+.mail .dot{width:9px;height:9px;border-radius:50%;background:var(--bad);margin-top:7px}
+.mail b{display:block;color:var(--ink)}
+.mail span{color:var(--muted);font-size:13px}
+.mail time{color:var(--bad);font-size:12px;font-weight:700;white-space:nowrap}
+
+/* AMPLIFY */
+.cost{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:40px}
+.cost .card{border-top:4px solid var(--bad)}
+.cost b.big{font-size:34px;color:var(--bad);display:block;letter-spacing:-.8px;margin-bottom:4px}
+
+/* STORY */
+.story{display:grid;grid-template-columns:.85fr 1.15fr;gap:54px;align-items:center}
+.portrait{background:linear-gradient(160deg,#0c2a47,#061b31);border-radius:18px;padding:34px;color:#cfdbe6;position:relative;box-shadow:var(--shadow)}
+.portrait .ini{width:86px;height:86px;border-radius:50%;background:linear-gradient(135deg,var(--gold),#a8732c);display:grid;place-items:center;color:var(--ink);font-weight:900;font-size:30px;margin-bottom:18px}
+.portrait h4{color:#fff;font-size:22px;margin-bottom:4px}
+.portrait .cred{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}
+.portrait .cred span{font-size:12px;border:1px solid #2a5079;padding:4px 10px;border-radius:99px;color:#c4d3e0}
+.quote-big{font-size:24px;line-height:1.4;color:var(--ink);font-weight:600;border-left:4px solid var(--gold);padding-left:20px;margin:22px 0}
+
+/* OUTCOMES */
+.outcome{position:relative;padding-top:58px}
+.outcome .ico{position:absolute;top:22px;left:26px;width:42px;height:42px;border-radius:11px;background:var(--goldbg);display:grid;place-items:center;font-size:21px}
+.outcome h3{font-size:19.5px}
+.outcome p{color:var(--muted);font-size:15.5px;margin:0}
+.fromto{display:grid;grid-template-columns:1fr 1fr;margin-top:46px;border-radius:var(--r);overflow:hidden;border:1px solid var(--line)}
+.fromto>div{padding:28px 30px}
+.fromto .from{background:#fff}.fromto .to{background:var(--ink);color:#d7e2ec}
+.fromto h4{font-size:15px;text-transform:uppercase;letter-spacing:1.3px}
+.fromto .to h4{color:var(--gold2)}
+.fromto li{margin-bottom:9px;font-size:15.5px}
+
+/* HANDOVER */
+.ho{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:44px}
+.ho .card{padding:0;overflow:hidden;display:flex;flex-direction:column}
+.ho .top{padding:22px 24px;color:#fff;display:flex;align-items:center;gap:14px}
+.ho .top .f{width:48px;height:56px;border-radius:7px;background:rgba(255,255,255,.18);display:grid;place-items:center;font-weight:900;font-size:13px;letter-spacing:.5px}
+.ho .top h3{color:#fff;margin:0;font-size:19px}
+.ho .top small{display:block;opacity:.85;font-size:12.5px}
+.ho .xl .top{background:#1d6f42}.ho .wd .top{background:#2b579a}.ho .pp .top{background:#c43e1c}
+.ho .body{padding:22px 24px;flex:1}
+.ho .body .who{font-size:13px;font-weight:700;color:#8a5f1f;text-transform:uppercase;letter-spacing:.8px;margin-bottom:10px}
+.ho .body li{font-size:15px}
+.ho-foot{margin-top:28px;background:var(--goldbg);border:1px solid #efd9b3;border-radius:var(--r);padding:20px 26px;display:flex;gap:18px;align-items:center;flex-wrap:wrap;justify-content:space-between}
+.ho-foot b{color:var(--ink)}
+
+/* SERVICES */
+.svc{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-top:40px}
+.svc .card{padding:22px;border-top:3px solid var(--gold)}
+.svc .num{font-size:12px;font-weight:800;color:var(--gold);letter-spacing:1px}
+.svc h3{font-size:17px;margin:6px 0 8px}
+.svc p{font-size:14px;color:#a9bccc;margin:0 0 10px}
+.svc .q{font-size:13px;color:#fff;background:rgba(211,157,72,.12);border-radius:7px;padding:8px 10px;font-style:italic}
+
+/* NICHES */
+.tabs{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:34px 0 26px}
+.tab{border:1.5px solid var(--line);background:#fff;padding:11px 18px;border-radius:99px;font-weight:700;font-size:14.5px;color:var(--ink);cursor:pointer;transition:.15s}
+.tab:hover{border-color:var(--gold)}
+.tab.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.panel{display:none;background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);overflow:hidden}
+.panel.on{display:grid;grid-template-columns:1fr 1fr 1fr}
+.panel>div{padding:30px}
+.panel>div+div{border-left:1px solid var(--line)}
+.panel h4{font-size:13px;text-transform:uppercase;letter-spacing:1.2px;color:#8a5f1f;margin-bottom:14px}
+.panel .head{grid-column:1/-1;background:var(--paper);border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;align-items:center;flex-wrap:wrap}
+.panel .head h3{margin:0}
+.panel .head p{margin:4px 0 0;color:var(--muted);font-size:15px}
+.panel li{font-size:15px}
+.pill{display:inline-block;background:var(--ink);color:var(--gold2);font-weight:700;font-size:13px;padding:7px 13px;border-radius:99px;white-space:nowrap}
+
+/* CASE */
+.case{display:grid;grid-template-columns:1fr 1fr;gap:0;border-radius:18px;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line)}
+.case>div{padding:38px}
+.case .l{background:#fff}.case .r{background:var(--ink);color:#d7e2ec}
+.case .r h3{color:#fff}
+.bridge{display:flex;align-items:flex-end;gap:10px;height:170px;margin:20px 0 10px;border-bottom:1px solid #2a5079;padding-bottom:4px}
+.bridge div{flex:1;border-radius:4px 4px 0 0;position:relative}
+.bridge div span{position:absolute;top:-20px;left:50%;transform:translateX(-50%);font-size:11px;color:#cfdbe6;white-space:nowrap}
+.blabels{display:flex;gap:10px;font-size:10.5px;color:#8ea5ba}
+.blabels span{flex:1;text-align:center}
+.case table{width:100%;border-collapse:collapse;font-size:14.5px;margin-top:10px}
+.case td{padding:9px 0;border-bottom:1px solid var(--line)}
+.case td:last-child{text-align:right;font-weight:700;color:var(--ink)}
+
+/* TESTIMONIALS */
+.tgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:40px}
+.tcard{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:26px;display:flex;flex-direction:column}
+.tcard .theme{font-size:12px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:#8a5f1f;margin-bottom:12px}
+.tcard blockquote{margin:0 0 18px;font-size:16px;color:var(--ink);flex:1}
+.tcard blockquote:before{content:"“";font-size:44px;line-height:0;color:var(--gold);vertical-align:-18px;margin-right:4px;font-family:Georgia,serif}
+.tcard .by{display:flex;align-items:center;gap:12px;font-size:13.5px;color:var(--muted);border-top:1px solid var(--line);padding-top:14px}
+.tcard .av{width:38px;height:38px;border-radius:50%;background:var(--ink);color:var(--gold2);display:grid;place-items:center;font-weight:800;font-size:13px;flex:none}
+.tcard .by b{color:var(--ink);display:block}
+.nda{font-size:13px;color:var(--muted);text-align:center;margin-top:22px}
+
+/* VALUE / PRICE JUSTIFICATION */
+.veq{display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;background:var(--ink2);border:1px solid #1d4266;border-radius:16px;padding:24px;margin:36px 0 34px;color:#fff;font-weight:700}
+.veq .frac{display:inline-flex;flex-direction:column;align-items:center}
+.veq .frac span{padding:4px 12px}
+.veq .frac span:first-child{border-bottom:2px solid var(--gold);color:var(--gold2)}
+.veq .frac span:last-child{color:#a9bccc}
+.vtable{width:100%;border-collapse:separate;border-spacing:0;background:var(--ink2);border:1px solid #1d4266;border-radius:16px;overflow:hidden;font-size:15px}
+.vtable th,.vtable td{padding:15px 18px;text-align:left;border-bottom:1px solid #1d4266}
+.vtable th{background:#0a2440;color:var(--gold2);font-size:12.5px;text-transform:uppercase;letter-spacing:1px}
+.vtable td:first-child{color:#fff;font-weight:600}
+.vtable tr:last-child td{border-bottom:0}
+.vtable .me td{background:rgba(211,157,72,.12)}
+.vtable .me td:first-child{color:var(--gold2)}
+.roi{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}
+.roi .card{text-align:center}
+.roi b{display:block;font-size:30px;color:var(--gold2);letter-spacing:-.6px}
+.roi span{font-size:14px;color:#a9bccc}
+
+/* STACK */
+.stackbox{max-width:860px;margin:40px auto 0;background:#fff;border:2px solid var(--ink);border-radius:18px;overflow:hidden;box-shadow:var(--shadow)}
+.stackbox .h{background:var(--ink);color:#fff;padding:18px 26px;font-weight:800;display:flex;justify-content:space-between}
+.stackbox .h span{color:var(--gold2)}
+.srow{display:grid;grid-template-columns:1fr auto;gap:16px;padding:14px 26px;border-bottom:1px solid var(--line);font-size:15.5px}
+.srow b{color:var(--ink)}
+.srow small{display:block;color:var(--muted);font-size:13.5px}
+.srow .v{color:var(--muted);font-weight:700;white-space:nowrap}
+.stotal{display:grid;grid-template-columns:1fr auto;padding:20px 26px;background:var(--goldbg);font-weight:800;color:var(--ink);font-size:17px}
+.stotal .v s{color:var(--muted);font-weight:600;margin-right:10px}
+
+/* PRICING */
+.tiers{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:40px;align-items:stretch}
+.tier{background:#fff;border:1px solid var(--line);border-radius:16px;padding:26px 22px;display:flex;flex-direction:column;position:relative}
+.tier.pop{border:2px solid var(--gold);box-shadow:var(--shadow);transform:translateY(-8px)}
+.tier .badge{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--gold);color:var(--ink);font-size:11.5px;font-weight:800;padding:5px 12px;border-radius:99px;letter-spacing:.6px;white-space:nowrap}
+.tier h3{font-size:14px;letter-spacing:1.6px;text-transform:uppercase;color:#8a5f1f;margin-bottom:6px}
+.tier .price{font-size:30px;font-weight:800;color:var(--ink);letter-spacing:-.8px;line-height:1.1}
+.tier .price small{font-size:14px;color:var(--muted);font-weight:600;letter-spacing:0}
+.tier .for{font-size:14px;color:var(--muted);margin:10px 0 16px;min-height:44px}
+.tier ul{flex:1;margin-bottom:18px}
+.tier li{font-size:14.5px}
+.tier .files{display:flex;gap:6px;margin-bottom:16px}
+.tier .files span{font-size:11px;font-weight:800;color:#fff;padding:3px 8px;border-radius:5px}
+.fx{background:#1d6f42}.fw{background:#2b579a}.fp{background:#c43e1c}.foff{background:#c9d3dc!important;color:#fff}
+.tier .btn{justify-content:center}
+.tracks{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:34px}
+.tracks .card h3{display:flex;align-items:center;gap:10px}
+.tracks .card h3 span{font-size:12px;background:var(--ink);color:var(--gold2);padding:4px 10px;border-radius:99px;letter-spacing:.6px}
+
+/* PROCESS */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:40px;counter-reset:s}
+.step{position:relative;padding:26px;background:#fff;border:1px solid var(--line);border-radius:var(--r)}
+.step:before{counter-increment:s;content:counter(s);width:40px;height:40px;border-radius:50%;background:var(--ink);color:var(--gold2);display:grid;place-items:center;font-weight:800;margin-bottom:14px}
+.step h3{font-size:18px}
+.step p{font-size:15px;color:var(--muted);margin:0}
+.step .when{display:inline-block;margin-top:12px;font-size:12.5px;font-weight:700;color:#8a5f1f;background:var(--goldbg);padding:4px 10px;border-radius:99px}
+.guar{margin-top:34px;display:grid;grid-template-columns:auto 1fr;gap:26px;align-items:center;background:var(--ink);color:#d7e2ec;border-radius:18px;padding:32px 36px}
+.seal{width:116px;height:116px;border-radius:50%;border:3px dashed var(--gold);display:grid;place-items:center;text-align:center;color:var(--gold2);font-weight:800;font-size:13px;line-height:1.25;padding:10px}
+.guar h3{color:#fff}
+
+/* MAGNET */
+.magnet{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;background:linear-gradient(135deg,#0c2a47,#061b31);border-radius:22px;padding:46px;color:#d7e2ec}
+.magnet h2{color:#fff}
+form.mf{background:#fff;border-radius:16px;padding:26px;color:var(--txt)}
+.mf label{display:block;font-size:13px;font-weight:700;color:var(--ink);margin:0 0 6px}
+.mf input,.mf select{width:100%;padding:12px 13px;border:1.5px solid var(--line);border-radius:9px;font-size:15px;margin-bottom:14px;font-family:inherit;background:#fff}
+.mf input:focus,.mf select:focus{outline:none;border-color:var(--gold)}
+.mf .btn{width:100%;justify-content:center}
+.mf .ok{display:none;background:#e7f5ee;color:var(--ok);padding:12px;border-radius:9px;font-size:14px;font-weight:600;margin-top:12px}
+.mf small{display:block;color:var(--muted);font-size:12px;margin-top:10px;text-align:center}
+
+/* FAQ */
+.faq{max-width:860px;margin:36px auto 0}
+details{background:#fff;border:1px solid var(--line);border-radius:12px;margin-bottom:12px;padding:0 22px}
+summary{cursor:pointer;list-style:none;padding:19px 30px 19px 0;font-weight:700;color:var(--ink);position:relative;font-size:16.5px}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";position:absolute;right:0;top:14px;font-size:26px;color:var(--gold);font-weight:400}
+details[open] summary:after{content:"–"}
+details p{color:var(--muted);padding-bottom:18px;margin:0;font-size:15.5px}
+
+/* FINAL */
+.final{text-align:center;padding:100px 0;background:radial-gradient(900px 400px at 50% 0%,#18456f,transparent 70%),var(--ink)}
+.final h2{font-size:clamp(30px,4vw,48px)}
+.final .hero-ctas{justify-content:center}
+.ps{max-width:720px;margin:34px auto 0;font-size:15px;color:#a9bccc;text-align:left;border-top:1px solid #1d4266;padding-top:22px}
+.ps b{color:var(--gold2)}
+footer{background:#041427;color:#7f97ad;font-size:13.5px;padding:34px 0}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer a{color:#b4c6d6;text-decoration:none;margin-left:18px}
+.wa-float{position:fixed;right:20px;bottom:20px;z-index:60;width:58px;height:58px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 10px 26px rgba(0,0,0,.3);transition:.2s}
+.wa-float:hover{transform:scale(1.07)}
+
+@media (max-width:1060px){
+  .svc{grid-template-columns:repeat(3,1fr)}
+  .tiers{grid-template-columns:repeat(2,1fr)}
+  .tier.pop{transform:none}
+  .navlinks{display:none}
+}
+@media (max-width:880px){
+  section{padding:68px 0}
+  .hero-grid,.pain-grid,.story,.case,.magnet,.tracks,.fromto{grid-template-columns:1fr}
+  .stack{height:430px;max-width:520px}
+  .stats,.g4,.steps{grid-template-columns:repeat(2,1fr)}
+  .g3,.cost,.ho,.tgrid,.roi{grid-template-columns:1fr}
+  .panel.on{grid-template-columns:1fr}
+  .panel>div+div{border-left:0;border-top:1px solid var(--line)}
+  .svc{grid-template-columns:1fr 1fr}
+  .guar{grid-template-columns:1fr;text-align:center}.seal{margin:auto}
+  .magnet{padding:30px}
+  .vtable{font-size:13.5px}.vtable th,.vtable td{padding:11px 10px}
+}
+@media (max-width:560px){
+  .wrap{padding:0 18px}
+  .stats,.steps,.svc,.tiers{grid-template-columns:1fr}
+  .stack{height:390px}
+  .nav-cta{display:none}
+  .hide-sm{display:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#top"><div class="logo-mark">SF</div><div>Shams Farooq<small>GCC FINANCE ADVISORY</small></div></a>
+    <div class="navlinks">
+      <a href="#outcomes">Outcomes</a><a href="#handover">What you receive</a><a href="#niches">Industries</a><a href="#proof">Proof</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a>
+    </div>
+    <a class="btn btn-gold nav-cta" href="#" data-wa="Hi Shams, I'd like a fixed SAR quote for a financial analysis.">Get a fixed quote in 24h</a>
+  </div>
+</nav>
+
+<!-- ============ HERO (Hook) ============ -->
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow">For CFOs · Financial Controllers · Senior Finance Managers in KSA & GCC</div>
+        <h1>Walk into the board meeting with numbers <em>you can defend</em>, not a spreadsheet you have to explain.</h1>
+        <p class="lead">Send me your trial balance, sales export or last financial statements. In 3–10 working days you get back an <b style="color:#fff">Excel model</b>, a <b style="color:#fff">Word report</b> and a <b style="color:#fff">CEO-ready PowerPoint</b>. Together they show where the losses come from, how much profit your current resources can still produce, and what to do next.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-gold" href="#" data-wa="Hi Shams, I'd like a fixed SAR quote. I can share a TB / sales file.">Send one file → fixed SAR quote in 24h</a>
+          <a class="btn btn-ghost" href="#magnet">Get the free CFO KPI Pack</a>
+        </div>
+        <div class="hero-mini"><span>From SAR 500</span><span>NDA on request</span><span>PO & TRN invoice</span><span>Every figure tied to source</span></div>
+      </div>
+
+      <!-- Hand-over visual -->
+      <div class="stack" aria-label="Excel, Word and PowerPoint deliverables">
+        <div class="doc x">
+          <div class="doc-h">X&nbsp; Profitability_Dashboard.xlsx <i>LIVE MODEL</i></div>
+          <div class="xb">
+            <div class="kpis">
+              <div class="kpi"><small>Revenue</small><b>SAR 48.2M</b> <span class="dn">▼ 6.1%</span></div>
+              <div class="kpi"><small>Gross margin</small><b>11.4%</b> <span class="up">▲ path 18%</span></div>
+              <div class="kpi"><small>CCC</small><b>142 d</b> <span class="dn">▲ 23d</span></div>
+              <div class="kpi"><small>Upside</small><b>SAR 3.1M</b> <span class="up">sized</span></div>
+            </div>
+            <div class="chartrow">
+              <div class="mini"><small>Monthly sales vs profit · KSA / USA / RoW</small>
+                <svg viewBox="0 0 220 80" width="100%" height="84" preserveAspectRatio="none">
+                  <g fill="#123a5e"><rect x="6" y="30" width="12" height="50"/><rect x="24" y="22" width="12" height="58"/><rect x="42" y="34" width="12" height="46"/><rect x="60" y="18" width="12" height="62"/><rect x="78" y="28" width="12" height="52"/><rect x="96" y="40" width="12" height="40"/><rect x="114" y="26" width="12" height="54"/><rect x="132" y="20" width="12" height="60"/><rect x="150" y="32" width="12" height="48"/><rect x="168" y="16" width="12" height="64"/><rect x="186" y="24" width="12" height="56"/><rect x="204" y="12" width="12" height="68"/></g>
+                  <polyline fill="none" stroke="#d39d48" stroke-width="2.6" points="12,58 30,52 48,62 66,46 84,54 102,66 120,50 138,44 156,52 174,38 192,44 210,30"/>
+                </svg>
+              </div>
+              <div class="mini"><small>Top-10 customers · margin</small>
+                <svg viewBox="0 0 120 80" width="100%" height="84" preserveAspectRatio="none"><g fill="#1d6f42"><rect x="0" y="4" width="110" height="7"/><rect x="0" y="15" width="92" height="7"/><rect x="0" y="26" width="80" height="7"/><rect x="0" y="37" width="66" height="7"/><rect x="0" y="48" width="54" height="7"/></g><g fill="#c2453b"><rect x="0" y="59" width="40" height="7"/><rect x="0" y="70" width="28" height="7"/></g></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="doc w">
+          <div class="doc-h">W&nbsp; Board_Report.docx <i>12 PAGES</i></div>
+          <div class="wb">
+            <div class="t"></div>
+            <div class="l" style="width:96%"></div><div class="l" style="width:88%"></div><div class="l" style="width:92%"></div>
+            <div class="call">Finding 3: Freight on 4 export lanes is eroding 2.8 pts of GM</div>
+            <div class="l" style="width:90%"></div><div class="l" style="width:70%"></div>
+          </div>
+        </div>
+        <div class="doc p">
+          <div class="doc-h">P&nbsp; CEO_Presentation.pptx <i>9 SLIDES</i></div>
+          <div class="pb">
+            <span class="tag">BOARD DECISION</span>
+            <h5>Margin recovery: SAR 3.1M within existing capacity</h5>
+            <p>3 levers · 2 quarters · no new capex</p>
+            <div class="bars"><div style="height:30%"></div><div style="height:44%"></div><div style="height:58%"></div><div style="height:72%"></div><div style="height:96%"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><b>3 files</b><span>Excel · Word · PowerPoint, every engagement from Diagnostic up</span></div>
+      <div class="stat"><b>0.00 SAR</b><span>Tie-out difference: every figure traces to your source data</span></div>
+      <div class="stat"><b>24 h</b><span>Fixed SAR quote after you share one file</span></div>
+      <div class="stat"><b>19 yrs</b><span>Audit, consulting and GCC finance advisory since 2007</span></div>
+    </div>
+  </div>
+</header>
+
+<div class="strip">
+  <div class="wrap">
+    <span>Built for:</span><b>Industrial manufacturing</b><b>Clean-energy & project finance</b><b>PPP & infrastructure</b><b>Management consulting firms</b><b>Trading, FMCG & contracting</b>
+  </div>
+</div>
+
+<!-- ============ P — PROBLEM ============ -->
+<section id="problem">
+  <div class="wrap pain-grid">
+    <div>
+      <div class="eyebrow">The problem</div>
+      <h2>You were hired to steer the business. Most of your week goes on rebuilding spreadsheets.</h2>
+      <p class="lead">You know the numbers better than anyone in the building. But the CEO wants a board deck by Sunday, the bank wants a valuation, the auditors want reclassifications, and the ERP export still doesn't match the TB.</p>
+      <ul class="tick cross" style="margin-top:22px">
+        <li>Your evenings go on formatting, reconciling and re-cutting the same data, not on analysis.</li>
+        <li>The business has lost money for 2–3 years and everyone has a theory. Nobody has a <b>quantified root cause</b>.</li>
+        <li>You know there is profit left in the current plant, team or portfolio, but you can't prove how much to a sceptical board.</li>
+        <li>When a director asks "where did this number come from?", the honest answer is "give me until tomorrow".</li>
+      </ul>
+    </div>
+    <div class="inbox" aria-hidden="true">
+      <div class="inbox-h"><span>Inbox: Thursday, 9:47 PM</span><span>14 unread</span></div>
+      <div class="mail"><div class="dot"></div><div><b>CEO</b><span>Need the margin story for Sunday's board. Why are we still losing money?</span></div><time>URGENT</time></div>
+      <div class="mail"><div class="dot"></div><div><b>Relationship Manager, Bank</b><span>Please share updated valuation & DSCR before credit committee</span></div><time>Due Mon</time></div>
+      <div class="mail"><div class="dot"></div><div><b>Audit Senior</b><span>Freight still in COGS. Please reclassify to S&D per IFRS</span></div><time>Overdue</time></div>
+      <div class="mail"><div class="dot"></div><div><b>Chairman's Office</b><span>Can we see profitability by market: KSA vs USA vs export?</span></div><time>Today</time></div>
+      <div class="mail"><div class="dot"></div><div><b>Sales Director</b><span>My numbers don't match yours again…</span></div><time>2h ago</time></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ A — AMPLIFY ============ -->
+<section class="soft">
+  <div class="wrap center">
+    <div class="eyebrow">What it costs you to wait</div>
+    <h2>Every month without a clear diagnosis costs more than the analysis would.</h2>
+    <p class="lead">Losses that go undiagnosed keep running. A deck you can't defend loses the room. A valuation the bank doesn't trust delays the facility. Each of these lands on you.</p>
+    <div class="cost">
+      <div class="card"><b class="big">1 pt</b><h3>of margin left unrecovered</h3><p style="color:var(--muted);margin:0">On SAR 50M revenue, one point of hidden margin leakage is <b>SAR 500,000 a year</b>. Most diagnostics find 2–4 points.</p></div>
+      <div class="card"><b class="big">3–6 wks</b><h3>of credit or investment delay</h3><p style="color:var(--muted);margin:0">A valuation or cash-flow pack that gets sent back for "more support" pushes the facility, the tariff or the deal to the next committee.</p></div>
+      <div class="card"><b class="big">1 meeting</b><h3>to lose the board's confidence</h3><p style="color:var(--muted);margin:0">One number you can't trace back, one slide that contradicts the report, and the next review is about your credibility instead of the business.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ S — STORY / SOLUTION ============ -->
+<section>
+  <div class="wrap story">
+    <div class="portrait">
+      <div class="ini">SF</div>
+      <h4>Shams Farooq</h4>
+      <div style="color:var(--gold2);font-size:14px;font-weight:600">Senior Financial Analyst & BI Advisor, KSA / GCC</div>
+      <div class="cred"><span>CA Finalist (ICAP)</span><span>MSc Economics</span><span>Ex-Senior Audit Associate</span><span>Management Consultant</span><span>GCC clients since 2013</span></div>
+      <p style="font-size:14.5px;color:#a9bccc;margin:0">Statutory audit → management consulting → GCC advisory. I read a trial balance the way your auditor does, and I present it the way your board needs to see it.</p>
+    </div>
+    <div>
+      <div class="eyebrow">Why this works</div>
+      <h2>I don't build spreadsheets. I build the evidence behind the decision.</h2>
+      <p>I started in statutory audit, where every number has to trace back to a source. Then I moved into management consulting, where every number has to lead to a decision. For the last decade I've worked with finance leaders across Saudi Arabia and the GCC, and I kept seeing the same thing: <b>strong finance teams buried in data preparation, with no time left to interpret it.</b></p>
+      <div class="quote-big">"My job is to take the hardest 80% of the analysis off your desk. You keep the 20% that only you can do: the judgement, the room, the decision."</div>
+      <p>So I built a fixed, repeatable method. Your raw data goes in. What comes out is a <b>defensible diagnosis</b> (where money is lost, and why), a <b>sized opportunity</b> (how much profit your existing resources can still produce), and a <b>board-ready story</b> across three documents that agree with each other down to the riyal.</p>
+      <a class="btn btn-ink" href="#handover" style="margin-top:8px">See exactly what you receive →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ T — TRANSFORMATION: DREAM OUTCOMES ============ -->
+<section class="soft" id="outcomes">
+  <div class="wrap">
+    <div class="center">
+      <div class="eyebrow">The outcome</div>
+      <h2>What changes once the files land in your inbox</h2>
+      <p class="lead">You're not buying formulas. You're buying back your time, your authority in the room, and a clear plan.</p>
+    </div>
+    <div class="grid g3" style="margin-top:42px">
+      <div class="card outcome"><div class="ico">⏳</div><h3>Your weekends come back</h3><p>The data cleaning, mapping, reconciling and formatting moves to me. Clients say this is the first thing they notice: someone finally shares the load.</p></div>
+      <div class="card outcome"><div class="ico">🎯</div><h3>A presentation the CEO and board accept</h3><p>A PowerPoint built around the decision, not the data: findings, impact in SAR, recommended actions. Ready to present without rework.</p></div>
+      <div class="card outcome"><div class="ico">🛡️</div><h3>A report you can defend line by line</h3><p>Every figure in the Word report traces to the Excel model, and every model figure traces to your TB. When someone challenges a number, you can show where it came from.</p></div>
+      <div class="card outcome"><div class="ico">🔍</div><h3>The hidden drivers of loss, named and sized</h3><p>Price/volume/mix, raw-material squeeze, freight, customer and SKU leakage, idle capacity, working-capital drag. Each driver gets a number, so you stop debating theories.</p></div>
+      <div class="card outcome"><div class="ico">📈</div><h3>Profit potential within the resources you already have</h3><p>How much more margin the current plant, team, fleet or portfolio can produce before you ask for new capex or headcount, prioritised by speed and effort.</p></div>
+      <div class="card outcome"><div class="ico">🏦</div><h3>Numbers banks and investors trust</h3><p>WACC, FCFF/FCFE, DSCR and cash-flow packs built with Saudi parameters and clear assumptions, so credit committees review the case instead of questioning the model.</p></div>
+    </div>
+
+    <div class="fromto">
+      <div class="from"><h4 style="color:var(--bad)">Before</h4>
+        <ul class="tick cross"><li>Thursday-night scramble for Sunday's board</li><li>"We think it's raw-material prices…"</li><li>Three versions of the truth: Sales, Finance, ERP</li><li>A 60-tab workbook only you understand</li><li>Valuation returned by the bank for "more support"</li></ul>
+      </div>
+      <div class="to"><h4>After</h4>
+        <ul class="tick"><li>Board pack ready days in advance, with no rework</li><li>"Freight on 4 lanes costs us 2.8 pts. Here is the fix."</li><li>One model, one source of truth, tied to 0.00 SAR</li><li>A one-page dashboard the CEO can read on their own</li><li>Valuation that answers the committee's questions before they're asked</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HANDOVER (core differentiator) ============ -->
+<section id="handover">
+  <div class="wrap">
+    <div class="center">
+      <div class="eyebrow">What you receive</div>
+      <h2>Three documents, one story, every figure consistent</h2>
+      <p class="lead">You don't get a spreadsheet to interpret yourself. You get a complete decision package, with each file written for a different audience.</p>
+    </div>
+    <div class="ho">
+      <div class="card xl">
+        <div class="top"><div class="f">XLSX</div><div><h3>The Evidence</h3><small>Live, data-backed Excel model</small></div></div>
+        <div class="body"><div class="who">For you & your team</div>
+          <ul class="tick"><li>Interactive dashboard: KPI cards, slicers by market / customer / product</li><li>Driver analysis: price, volume, mix, cost, freight, working capital</li><li>Scenario & sensitivity tables you can flex in the meeting</li><li>Tie-out sheet: TB = model = report, difference 0.00 SAR</li><li>Unlocked, documented, yours to reuse every month</li></ul>
+        </div>
+      </div>
+      <div class="card wd">
+        <div class="top"><div class="f">DOCX</div><div><h3>The Argument</h3><small>Written board / lender report</small></div></div>
+        <div class="body"><div class="who">For the board, auditors & bank</div>
+          <ul class="tick"><li>Executive summary a director reads in 3 minutes</li><li>Findings ranked by SAR impact, with evidence for each</li><li>Hidden loss drivers & recoverable profit, quantified</li><li>Assumptions, methodology & data gaps stated openly</li><li>Recommended actions with owners and timelines</li></ul>
+        </div>
+      </div>
+      <div class="card pp">
+        <div class="top"><div class="f">PPTX</div><div><h3>The Decision</h3><small>CEO / board-ready presentation</small></div></div>
+        <div class="body"><div class="who">For the CEO, chairman & investors</div>
+          <ul class="tick"><li>7–12 slides structured: situation → finding → impact → ask</li><li>One message per slide, chart-led, minimal text</li><li>Your company branding, ready to present the same day</li><li>Appendix slides that answer the tough questions in advance</li><li>Speaker notes so you can present it without me</li></ul>
+        </div>
+      </div>
+    </div>
+    <div class="ho-foot">
+      <div><b>Why three files matter:</b> the analyst, the board and the bank each read numbers differently. Most freelancers deliver one file. You get all three, built from the same model, so they never contradict each other.</div>
+      <a class="btn btn-ink" href="#pricing">See packages</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES as decision tools ============ -->
+<section class="dark">
+  <div class="wrap">
+    <div class="center">
+      <div class="eyebrow">Five engagements</div>
+      <h2>Each one answers a question your board is already asking</h2>
+    </div>
+    <div class="svc">
+      <div class="card"><div class="num">S1</div><h3>Executive Sales & Profitability Dashboard</h3><p>Market segmentation (KSA / USA / RoW), monthly sales vs profit, Top-10 customers & products, margin by segment.</p><div class="q">"Where exactly do we make and lose money?"</div></div>
+      <div class="card"><div class="num">S2</div><h3>WACC & FCFF / FCFE Valuation</h3><p>DCF with Saudi CAPM inputs, Zakat, sensitivities and football field, for banks, investors, M&A and impairment.</p><div class="q">"What is this business or project worth?"</div></div>
+      <div class="card"><div class="num">S3</div><h3>Cash Flow & Working Capital</h3><p>DSO / DIO / DPO, cash conversion cycle, interest & debt cover, 13-week cash view, release opportunities.</p><div class="q">"Where is our cash trapped?"</div></div>
+      <div class="card"><div class="num">S4</div><h3>Loss Diagnosis & Turnaround</h3><p>Multi-year margin bridge, hidden loss drivers, recoverable profit within current resources, phased SAR recovery plan.</p><div class="q">"Why are we losing money, and how do we stop?"</div></div>
+      <div class="card"><div class="num">S5</div><h3>IFRS Rectification & FS Automation</h3><p>TB → IS / BS / CFS mapping, zero unmapped GL, reclassifications (e.g. freight to S&D), balance check = 0.00 SAR.</p><div class="q">"Will these statements survive audit?"</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NICHES ============ -->
+<section id="niches">
+  <div class="wrap">
+    <div class="center">
+      <div class="eyebrow">Built for your industry</div>
+      <h2>Your sector has its own loss drivers. I know where to look.</h2>
+      <p class="lead">Choose your industry to see what I usually find, what I size, and what you take into the room.</p>
+    </div>
+    <div class="tabs" role="tablist">
+      <button class="tab on" data-t="ind">🏭 Industrial Manufacturing</button>
+      <button class="tab" data-t="ce">☀️ Clean Energy & Project Finance</button>
+      <button class="tab" data-t="ppp">🏛️ PPP & Infrastructure</button>
+      <button class="tab" data-t="mc">💼 Management Consulting Firms</button>
+      <button class="tab" data-t="tr">🚚 Trading, FMCG & Contracting</button>
+    </div>
+
+    <div class="panel on" id="p-ind">
+      <div class="head"><div><h3>Industrial Manufacturing</h3><p>For CFOs, controllers & GMs at Saudi/GCC manufacturers and exporters</p></div><span class="pill">Most popular: Diagnostic + Turnaround</span></div>
+      <div><h4>Hidden loss drivers I find</h4><ul class="tick cross"><li>Raw-material price pass-through lag (copper, steel, polymers)</li><li>Freight & export-lane costs buried in COGS</li><li>Loss-making SKUs and customers subsidised by winners</li><li>Under-absorbed overhead from idle capacity</li><li>Inventory build-up stretching the cash cycle</li></ul></div>
+      <div><h4>Profit potential I size</h4><ul class="tick"><li>Margin recoverable by repricing / renegotiating per customer</li><li>Capacity utilisation upside with no new capex</li><li>SKU rationalisation & mix-shift impact in SAR</li><li>Cash released by bringing DIO/DSO to benchmark</li></ul></div>
+      <div><h4>What you take to the board</h4><ul class="tick"><li>10-year margin bridge with root causes</li><li>Market-segmented profitability (KSA / USA / RoW)</li><li>Phased turnaround plan with SAR targets</li><li>Bank-ready cash-flow & covenant view</li></ul></div>
+    </div>
+
+    <div class="panel" id="p-ce">
+      <div class="head"><div><h3>Clean Energy & Project Finance</h3><p>For investment directors, PF heads & finance leads at IPPs, developers & SPVs</p></div><span class="pill">Most popular: Valuation + Lender Pack</span></div>
+      <div><h4>Hidden value leaks I find</h4><ul class="tick cross"><li>WACC / cost of equity not reflecting Saudi market parameters</li><li>DSCR headroom eroded by unmodelled O&M or degradation</li><li>Debt sculpting & reserve-account timing inefficiencies</li><li>Tariff vs P50/P90 sensitivities not stress-tested</li></ul></div>
+      <div><h4>Potential I quantify</h4><ul class="tick"><li>Equity IRR uplift from capital-structure optimisation</li><li>Tariff headroom for competitive bids</li><li>Value of refinancing or partial sell-down</li><li>Portfolio-level cash & return view</li></ul></div>
+      <div><h4>What you take to IC / lenders</h4><ul class="tick"><li>FCFF / FCFE valuation with full assumption book</li><li>Sensitivity & scenario tornado (tariff, capex, yield, rate)</li><li>Lender-style DSCR / LLCR summary</li><li>Investment committee deck with clear recommendation</li></ul></div>
+    </div>
+
+    <div class="panel" id="p-ppp">
+      <div class="head"><div><h3>PPP & Infrastructure</h3><p>For project directors, BD & finance teams at SPVs, sponsors and advisors in the NCP ecosystem</p></div><span class="pill">Most popular: Project + Retainer</span></div>
+      <div><h4>Risks & leaks I find</h4><ul class="tick cross"><li>Availability-payment deductions not modelled against KPIs</li><li>Lifecycle cost under-provisioning</li><li>Indexation mismatch between revenue and costs</li><li>Handback & termination exposure not quantified</li></ul></div>
+      <div><h4>Potential I quantify</h4><ul class="tick"><li>Bid competitiveness vs. value-for-money benchmark</li><li>Equity return under base / downside cases</li><li>Lifecycle & O&M savings opportunities</li><li>Cash waterfall headroom for distributions</li></ul></div>
+      <div><h4>What you take to the authority / sponsors</h4><ul class="tick"><li>Concession-period cash-flow & returns model</li><li>Risk-allocation & sensitivity report</li><li>Bid / board presentation with clear trade-offs</li><li>Monthly SPV reporting dashboard (retainer)</li></ul></div>
+    </div>
+
+    <div class="panel" id="p-mc">
+      <div class="head"><div><h3>Management Consulting Firms (White-Label)</h3><p>For partners & principals at boutique firms who need senior analysis capacity without new headcount</p></div><span class="pill">Most popular: Retainer (white-label)</span></div>
+      <div><h4>What's costing your firm</h4><ul class="tick cross"><li>Partners doing analyst-level modelling at partner rates</li><li>Turning down mandates for lack of finance bandwidth</li><li>Hiring full-time analysts for project-based demand</li><li>Deliverables that look different on every engagement</li></ul></div>
+      <div><h4>Potential I unlock for you</h4><ul class="tick"><li>Take on more mandates with the same team</li><li>Higher project margin: my fee vs. your billing rate</li><li>Faster turnaround on proposals & due diligence</li><li>Consistent, premium-looking client deliverables</li></ul></div>
+      <div><h4>What you hand to your client</h4><ul class="tick"><li>Model, report & deck under <b>your</b> brand</li><li>Strict NDA, with no contact with your client ever</li><li>Valuation, turnaround & dashboard modules</li><li>Priority queue & monthly capacity block</li></ul></div>
+    </div>
+
+    <div class="panel" id="p-tr">
+      <div class="head"><div><h3>Trading, FMCG, Distribution & Contracting</h3><p>For finance managers running high-volume, thin-margin or project-based businesses</p></div><span class="pill">Most popular: Dashboard + Working Capital</span></div>
+      <div><h4>Hidden loss drivers I find</h4><ul class="tick cross"><li>Discounts, rebates & returns eroding net margin</li><li>Slow-moving / expired stock tying up cash</li><li>Contract cost overruns & unbilled variations (EPC)</li><li>Retention & receivable ageing beyond terms</li></ul></div>
+      <div><h4>Profit potential I size</h4><ul class="tick"><li>Margin by channel, region, brand & salesperson</li><li>Cash released from receivables & retentions</li><li>Pricing & mix optimisation impact in SAR</li><li>Project-level profitability recovery</li></ul></div>
+      <div><h4>What you take to management</h4><ul class="tick"><li>Live sales & margin dashboard (refreshable monthly)</li><li>Working-capital release plan with targets</li><li>Project / contract P&L summary</li><li>Executive deck for owners or group CFO</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROOF / CASE ============ -->
+<section class="soft" id="proof">
+  <div class="wrap">
+    <div class="center" style="margin-bottom:40px">
+      <div class="eyebrow">Case study</div>
+      <h2>A Saudi manufacturer: from "we don't know why" to a quantified recovery plan</h2>
+    </div>
+    <div class="case">
+      <div class="l">
+        <h3>The situation</h3>
+        <p style="color:var(--muted)">A Saudi fastener and copper-busbar manufacturer had seen years of declining margins, with gross margin eventually turning <b>negative (−5.7%)</b>. Management blamed "the market". The board wanted evidence and a plan.</p>
+        <h3 style="margin-top:22px">What I delivered</h3>
+        <table>
+          <tr><td>Years of data analysed</td><td>10</td></tr>
+          <tr><td>Loss drivers isolated & quantified</td><td>Volume, copper cost squeeze, freight, mix</td></tr>
+          <tr><td>Data gaps flagged (missing-data checklist)</td><td>Itemised</td></tr>
+          <tr><td>Recovery actions with SAR impact</td><td>Phased roadmap</td></tr>
+          <tr><td>Handover</td><td><span class="fx" style="color:#fff;padding:2px 7px;border-radius:4px;font-size:11px">XLSX</span> <span class="fw" style="color:#fff;padding:2px 7px;border-radius:4px;font-size:11px">DOCX</span> <span class="fp" style="color:#fff;padding:2px 7px;border-radius:4px;font-size:11px">PPTX</span></td></tr>
+        </table>
+      </div>
+      <div class="r">
+        <h3>Gross-margin bridge (illustrative)</h3>
+        <p style="color:#a9bccc;font-size:14.5px">The board stopped debating causes and started deciding on levers.</p>
+        <div class="bridge">
+          <div style="height:78%;background:#2a5079"><span>Peak GM</span></div>
+          <div style="height:52%;background:var(--bad)"><span>Volume</span></div>
+          <div style="height:40%;background:var(--bad)"><span>Copper</span></div>
+          <div style="height:22%;background:var(--bad)"><span>Freight</span></div>
+          <div style="height:12%;background:#7a2a24"><span>−5.7%</span></div>
+          <div style="height:46%;background:var(--gold)"><span>Recovery</span></div>
+        </div>
+        <div class="blabels"><span>Base</span><span>Driver 1</span><span>Driver 2</span><span>Driver 3</span><span>Current</span><span>Target</span></div>
+        <p style="margin-top:22px;color:#cfdbe6;font-size:15px">"For the first time, the board could see <b style="color:var(--gold2)">which</b> losses were structural and which were recoverable, and how much of the recovery needed no new investment."</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONY ============ -->
+<section>
+  <div class="wrap">
+    <div class="center">
+      <div class="eyebrow">What finance leaders write back</div>
+      <h2>In their words, from client emails</h2>
+    </div>
+    <!-- REPLACE each blockquote with the verbatim, permissioned email excerpt. Keep role/sector/region attribution. -->
+    <div class="tgrid">
+      <div class="tcard"><div class="theme">Shared the burden</div><blockquote>You took a huge administrative load off my desk. For once I spent the week thinking about the business instead of rebuilding reports.</blockquote><div class="by"><div class="av">FC</div><div><b>Financial Controller</b>Industrial group · Eastern Province, KSA</div></div></div>
+      <div class="tcard"><div class="theme">CEO-ready</div><blockquote>The presentation went to our CEO exactly as you sent it. No edits. He asked who prepared it.</blockquote><div class="by"><div class="av">FM</div><div><b>Senior Finance Manager</b>Manufacturing · Riyadh</div></div></div>
+      <div class="tcard"><div class="theme">Defensible</div><blockquote>Every question the board asked, I could answer from the report. Everything tied back. I've never felt that confident in a review.</blockquote><div class="by"><div class="av">CFO</div><div><b>CFO</b>Trading & distribution · Jeddah</div></div></div>
+      <div class="tcard"><div class="theme">Hidden loss drivers</div><blockquote>We had argued for two years about why we were losing money. Your analysis put a number on each cause in a week.</blockquote><div class="by"><div class="av">GM</div><div><b>General Manager, Finance</b>Fabrication & metals · KSA</div></div></div>
+      <div class="tcard"><div class="theme">Profit potential</div><blockquote>Seeing how much profit our existing capacity could still produce, with no new capex, changed the whole conversation with our owners.</blockquote><div class="by"><div class="av">HF</div><div><b>Head of Finance</b>Energy & projects · GCC</div></div></div>
+      <div class="tcard"><div class="theme">White-label partner</div><blockquote>Our client thought the model was built in-house. It let us take a mandate we would otherwise have turned down.</blockquote><div class="by"><div class="av">P</div><div><b>Partner</b>Boutique consulting firm · Riyadh / Dubai</div></div></div>
+    </div>
+    <p class="nda">Excerpts from client emails. Names and companies withheld under NDA. Original emails available for review on a discovery call.</p>
+  </div>
+</section>
+
+<!-- ============ O — OFFER: PRICE JUSTIFICATION ============ -->
+<section class="dark" id="value">
+  <div class="wrap">
+    <div class="center">
+      <div class="eyebrow">Why the price is what it is</div>
+      <h2>You aren't paying for spreadsheet hours. You're paying for the decision they support.</h2>
+      <p class="lead">A spreadsheet is a commodity. A diagnosis that names a SAR 2M leak, a deck that gets a board to approve a plan, a valuation that clears credit committee: those aren't.</p>
+    </div>
+
+    <div class="veq">
+      <span>Value you receive</span><span>=</span>
+      <span class="frac"><span>Defensible decision × Confidence it holds up</span><span>Days to deliver × Effort on your side</span></span>
+    </div>
+    <p class="center" style="color:#a9bccc;max-width:780px;margin:0 auto 34px">I keep the top line high (a board-ready outcome tied to source) and the bottom line low (3–10 days, and one file from you). That's where the value comes from.</p>
+
+    <table class="vtable">
+      <thead><tr><th>Option</th><th>Typical cost (indicative)</th><th>Time to answer</th><th>What you end up with</th></tr></thead>
+      <tbody>
+        <tr><td>Do it yourself</td><td>40–80 of your own evenings & weekends</td><td>4–8 weeks</td><td>A working file, usually without the report or the deck</td></tr>
+        <tr><td>Hire an FP&A analyst</td><td>Full-time KSA salary + GOSI, visa, onboarding</td><td>3–6 months to hire & ramp up</td><td>Capacity, but senior judgement still sits with you</td></tr>
+        <tr><td>Large advisory firm</td><td>Five-figure SAR fees, often more</td><td>6–12 weeks incl. scoping</td><td>Excellent, but sized and priced for large mandates</td></tr>
+        <tr><td>Generic freelancer</td><td>Low</td><td>Varies</td><td>A spreadsheet. No diagnosis, no narrative, no tie-out</td></tr>
+        <tr class="me"><td>Shams Farooq: GCC Finance Advisory</td><td><b>SAR 500–5,000, fixed in advance</b></td><td><b>3–10 working days</b></td><td><b>Excel + Word + PowerPoint, tied to 0.00 SAR, ready for the board</b></td></tr>
+      </tbody>
+    </table>
+
+    <div class="roi">
+      <div class="card"><b>0.7%</b><span>A SAR 3,500 project vs. one recovered margin point on SAR 50M revenue (SAR 500,000)</span></div>
+      <div class="card"><b>40+ hrs</b><span>Of senior finance time freed per engagement for work only you can do</span></div>
+      <div class="card"><b>1 meeting</b><span>Where your numbers hold up, which is worth more than the fee to your standing</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VALUE STACK ============ -->
+<section class="soft">
+  <div class="wrap">
+    <div class="center">
+      <div class="eyebrow">Everything included</div>
+      <h2>A Diagnostic engagement, itemised</h2>
+      <p class="lead">This is what each item would cost if you bought it separately, compared with what you pay as one package.</p>
+    </div>
+    <div class="stackbox">
+      <div class="h">DIAGNOSTIC + HANDOVER PACKAGE <span>Most chosen</span></div>
+      <div class="srow"><div><b>Data audit & clean-up</b><small>TB / ERP / sales export mapped, gaps itemised in a missing-data checklist</small></div><div class="v">SAR 800</div></div>
+      <div class="srow"><div><b>Live Excel model & dashboard (XLSX)</b><small>Slicers, KPI cards, driver analysis, scenario tables, tie-out sheet</small></div><div class="v">SAR 1,500</div></div>
+      <div class="srow"><div><b>Board / lender report (DOCX)</b><small>Executive summary, ranked findings, hidden loss drivers, sized profit potential</small></div><div class="v">SAR 1,000</div></div>
+      <div class="srow"><div><b>CEO-ready presentation (PPTX)</b><small>7–12 branded slides + appendix + speaker notes</small></div><div class="v">SAR 900</div></div>
+      <div class="srow"><div><b>30-min walkthrough call</b><small>I take you through the logic so you can defend every number yourself</small></div><div class="v">SAR 400</div></div>
+      <div class="srow"><div><b>One revision round + 14-day email support</b><small>For questions from the board, auditors or bank after delivery</small></div><div class="v">SAR 400</div></div>
+      <div class="stotal"><div>Total if bought separately</div><div class="v"><s>SAR 5,000</s> Your fee: SAR 1,000–2,500</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRICING ============ -->
+<section id="pricing">
+  <div class="wrap">
+    <div class="center">
+      <div class="eyebrow">Packages</div>
+      <h2>Fixed SAR fees. Agreed before any work starts.</h2>
+      <p class="lead">Every quote is fixed and written. No hourly billing, no scope creep, no surprises on the invoice.</p>
+    </div>
+    <div class="tiers">
+      <div class="tier">
+        <h3>Spark</h3><div class="price">SAR 500–900 <small>one-time</small></div>
+        <div class="for">One focused question, answered fast. A good way to test working together.</div>
+        <div class="files"><span class="fx">XLSX</span><span class="fw foff">DOCX</span><span class="fp foff">PPTX</span></div>
+        <ul class="tick"><li>1 dashboard, KPI pack or analysis</li><li>Clean, tied-out Excel file</li><li>1-page summary of findings</li><li>Delivered in 48–72 hours</li></ul>
+        <a class="btn btn-ink" href="#" data-wa="Hi Shams, I'm interested in the SPARK package (SAR 500–900).">Start with Spark</a>
+      </div>
+      <div class="tier pop"><span class="badge">MOST CHOSEN</span>
+        <h3>Diagnostic</h3><div class="price">SAR 1,000–2,500 <small>one-time</small></div>
+        <div class="for">The full three-file handover. Find the losses, size the upside, present it.</div>
+        <div class="files"><span class="fx">XLSX</span><span class="fw">DOCX</span><span class="fp">PPTX</span></div>
+        <ul class="tick"><li>Loss-driver & profit-potential analysis</li><li>Excel model + Word report + PowerPoint deck</li><li>30-min walkthrough call</li><li>1 revision + 14-day support</li><li>Delivered in 5–7 working days</li></ul>
+        <a class="btn btn-gold" href="#" data-wa="Hi Shams, I'm interested in the DIAGNOSTIC package (SAR 1,000–2,500).">Book a Diagnostic</a>
+      </div>
+      <div class="tier">
+        <h3>Project</h3><div class="price">SAR 2,500–4,000 <small>one-time</small></div>
+        <div class="for">Valuation, turnaround or IFRS/FS automation for a board, bank or investor.</div>
+        <div class="files"><span class="fx">XLSX</span><span class="fw">DOCX</span><span class="fp">PPTX</span></div>
+        <ul class="tick"><li>WACC & FCFF/FCFE DCF, or full turnaround plan, or TB→FS engine</li><li>Lender / IC-grade assumption book</li><li>2 revisions + 30-day support</li><li>PO, TRN invoice & NDA ready</li><li>Delivered in 7–10 working days</li></ul>
+        <a class="btn btn-ink" href="#" data-wa="Hi Shams, I'd like to scope a PROJECT engagement (SAR 2,500–4,000).">Scope a Project</a>
+      </div>
+      <div class="tier">
+        <h3>Retainer</h3><div class="price">SAR 3,000–5,000 <small>/ month</small></div>
+        <div class="for">Your outsourced senior analyst. Monthly board pack, done before you ask.</div>
+        <div class="files"><span class="fx">XLSX</span><span class="fw">DOCX</span><span class="fp">PPTX</span></div>
+        <ul class="tick"><li>Monthly dashboard refresh & variance commentary</li><li>Board / management deck every month</li><li>Ad-hoc analysis within capacity block</li><li>Priority WhatsApp line</li><li>White-label option for consulting firms</li></ul>
+        <a class="btn btn-ink" href="#" data-wa="Hi Shams, I'd like to discuss a monthly RETAINER (SAR 3,000–5,000).">Discuss a Retainer</a>
+      </div>
+    </div>
+
+    <div class="tracks">
+      <div class="card"><h3><span>TRACK A</span> Paying personally?</h3><p style="color:var(--muted)">Many senior finance managers invest in this themselves, because a deck that lands well and a diagnosis that holds up do more for a career than most courses.</p><ul class="tick"><li>Card, bank transfer or STC Pay</li><li>Start with Spark from SAR 500</li><li>Strict confidentiality: your employer never sees my name</li><li>Delivered under your name, ready to present</li></ul></div>
+      <div class="card"><h3><span>TRACK B</span> Company budget?</h3><p style="color:var(--muted)">Built for procurement: easy to approve, easy to process, easy to audit.</p><ul class="tick"><li>Formal quotation & Purchase Order accepted</li><li>Tax invoice with TRN</li><li>Mutual NDA signed before data is shared</li><li>Deliverables addressed to the CFO / board</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESS + GUARANTEE ============ -->
+<section class="soft">
+  <div class="wrap">
+    <div class="center">
+      <div class="eyebrow">How it works</div>
+      <h2>Four steps. Little effort on your side.</h2>
+    </div>
+    <div class="steps">
+      <div class="step"><h3>Send one file</h3><p>TB export, sales data or last FS on WhatsApp or email. NDA first if you prefer.</p><span class="when">5 minutes</span></div>
+      <div class="step"><h3>Get a fixed quote</h3><p>Scope, deliverables, timeline and a fixed SAR fee, in writing.</p><span class="when">Within 24 hours</span></div>
+      <div class="step"><h3>I do the heavy work</h3><p>Clean-up, mapping, modelling, diagnosis, report and deck. Questions are batched so you're not chased.</p><span class="when">3–10 working days</span></div>
+      <div class="step"><h3>Handover & walkthrough</h3><p>Excel + Word + PowerPoint, plus a call so you can defend every number on your own.</p><span class="when">30 minutes</span></div>
+    </div>
+    <div class="guar">
+      <div class="seal">TIE-OUT<br>GUARANTEE<br>0.00 SAR</div>
+      <div><h3>If a figure doesn't trace back to your source data, I fix it free, without argument.</h3><p style="margin:0;color:#a9bccc">Every number in the deck matches the report, and every number in the report matches the model and your TB. If the board, your auditor or your bank finds a figure that doesn't tie, I correct it at no cost, as many times as needed. If I miss the agreed delivery date, you get 20% off.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LEAD MAGNET ============ -->
+<section id="magnet">
+  <div class="wrap">
+    <div class="magnet">
+      <div>
+        <div class="eyebrow">Free for finance leaders</div>
+        <h2>Not ready to share data yet? Start with the free CFO KPI Pack.</h2>
+        <p style="color:#a9bccc">The one-page dashboard structure I use with GCC CFOs: 12 board-level KPIs with formulas, Saudi benchmarks and a 10-point margin-leakage checklist. Matched to your industry.</p>
+        <ul class="tick" style="margin-top:18px"><li>12 KPIs your board actually asks about</li><li>10-point hidden-loss checklist</li><li>Sector benchmark notes for KSA</li><li>Optional free 30-min financial health call</li></ul>
+      </div>
+      <form class="mf" id="mf">
+        <label for="n">Full name</label><input id="n" required placeholder="e.g. Ahmed Al-Qahtani" />
+        <label for="r">Role</label>
+        <select id="r" required><option value="">Select your role</option><option>CFO / Finance Director</option><option>Financial Controller</option><option>Senior Finance Manager / FP&A</option><option>Partner / Principal (consulting)</option><option>Project / Investment Director</option></select>
+        <label for="s">Industry</label>
+        <select id="s" required><option value="">Select your industry</option><option>Industrial manufacturing</option><option>Clean energy / project finance</option><option>PPP / infrastructure</option><option>Management consulting</option><option>Trading / FMCG / contracting</option><option>Other</option></select>
+        <label for="e">Work email</label><input id="e" type="email" required placeholder="name@company.com" />
+        <button class="btn btn-gold" type="submit">Send me the CFO KPI Pack</button>
+        <div class="ok" id="ok">✓ Thank you! Your pack is on its way. Check your inbox (and WhatsApp, if you shared it).</div>
+        <small>No spam. One useful email per fortnight. Unsubscribe anytime.</small>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="soft" id="faq">
+  <div class="wrap">
+    <div class="center">
+      <div class="eyebrow">Questions</div>
+      <h2>Answers before you ask</h2>
+    </div>
+    <div class="faq">
+      <details open><summary>Isn't this just an Excel job? Why not hire a cheaper freelancer?</summary><p>A freelancer gives you a spreadsheet. I give you a diagnosis, a sized opportunity and a board-ready story, in three documents that tie to your TB down to 0.00 SAR. The Excel file is how I get there. The decision is what you're buying. Most clients find the cost of one undiagnosed loss driver is many times the fee.</p></details>
+      <details><summary>How is my data kept confidential?</summary><p>A mutual NDA can be signed before you share anything. Files are kept only for the engagement and deleted on request. If you're paying personally, nobody at your company ever needs to know I was involved. The work is delivered under your name.</p></details>
+      <details><summary>What do I need to send?</summary><p>Usually one file to start: a trial balance export, a sales/ERP extract, or your last financial statements. If anything is missing, I send one consolidated missing-data checklist instead of chasing you with questions.</p></details>
+      <details><summary>Will the deliverables match our company format and IFRS?</summary><p>Yes. Reports and decks use your branding and terminology. Statements follow IFRS presentation, including common reclassifications (e.g. freight from COGS to Selling & Distribution), with every adjustment documented.</p></details>
+      <details><summary>Do you work with consulting firms on a white-label basis?</summary><p>Yes. Deliverables go out under your firm's brand, with a strict NDA and no contact with your end client. Many partners use the monthly retainer as reserved analyst capacity.</p></details>
+      <details><summary>Can my company pay by PO and invoice?</summary><p>Yes. I provide a formal quotation, accept Purchase Orders, and issue a tax invoice with TRN. Individuals can pay by card, bank transfer or STC Pay.</p></details>
+      <details><summary>What if the board or auditor challenges a number?</summary><p>That's what the tie-out guarantee is for. Every figure traces back to source. If something doesn't tie, I fix it free. The walkthrough call and support period cover follow-up questions too.</p></details>
+      <details><summary>Do you work outside Saudi Arabia?</summary><p>Yes, across the GCC (UAE, Qatar, Kuwait, Bahrain, Oman). Models use local parameters where relevant, and all pricing is in SAR for simplicity.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ R — RESPONSE ============ -->
+<section class="final dark">
+  <div class="wrap">
+    <div class="eyebrow">Your next step</div>
+    <h2>Send one file today.<br><span class="gold">Know where your profit is hiding by next week.</span></h2>
+    <p class="lead" style="margin:0 auto">Share a TB, sales export or last FS on WhatsApp. You'll have a fixed SAR quote within 24 hours. No commitment, no hourly billing, NDA on request.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-gold" href="#" data-wa="Hi Shams, I'd like to send a file for a fixed SAR quote.">💬 Send a file on WhatsApp</a>
+      <a class="btn btn-ghost" href="/cdn-cgi/l/email-protection#a6fddfc9d3d486c3cbc7cfcafb99d5d3c4ccc3c5d29be0cfdec3c2839496f5e7f4839496d7d3c9d2c3839496d4c3d7d3c3d5d2">✉ Email instead</a>
+    </div>
+    <div class="ps"><b>P.S.</b> If you're carrying a board meeting, a bank review or an audit close in the next 30 days, start now. The Diagnostic takes 5–7 working days, and the deck should reach your CEO before the meeting does.</div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>© 2026 Shams Farooq · GCC Finance Advisory · Senior Financial Analysis & BI for KSA / GCC</div>
+    <div class="hide-sm"><a href="#pricing">Pricing</a><a href="#faq">FAQ</a><a href="#" data-wa="Hi Shams">WhatsApp</a><a href="#">LinkedIn</a></div>
+  </div>
+</footer>
+
+<a class="wa-float" href="#" data-wa="Hi Shams, I'd like a fixed SAR quote." aria-label="WhatsApp">
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.5-.3z"/></svg>
+</a>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+// === Set your WhatsApp number here (international format, digits only), e.g. "9665XXXXXXXX" ===
+const WA_NUMBER = "";
+document.querySelectorAll("[data-wa]").forEach(a=>{
+  a.href = "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(a.dataset.wa);
+  a.target = "_blank"; a.rel = "noopener";
+});
+// Niche tabs
+document.querySelectorAll(".tab").forEach(t=>t.addEventListener("click",()=>{
+  document.querySelectorAll(".tab").forEach(x=>x.classList.remove("on"));
+  document.querySelectorAll(".panel").forEach(x=>x.classList.remove("on"));
+  t.classList.add("on");
+  document.getElementById("p-"+t.dataset.t).classList.add("on");
+}));
+// Lead magnet form (static demo; connect to Tally/Formspree/ConvertKit when live)
+document.getElementById("mf").addEventListener("submit",e=>{
+  e.preventDefault();
+  document.getElementById("ok").style.display="block";
+  e.target.querySelector("button").textContent="✓ Sent";
+});
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a54dc08bea13b672',t:'MTc5MzczMzc5Mg=='};var l=window.parent.location,o;try{o=new URL(l.origin).origin}catch(e){try{o=new URL(new URL(l.href).origin).origin}catch(e){o=''}}var u='/cdn-cgi/challenge-platform/scripts/jsd/main.js?ray=a54dc08bea13b672',a=document.createElement('script');a.src=o?new URL(u,o).href:u;document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
